@@ -1,0 +1,3 @@
+
+#!/bin/bash
+grep sudo /var/log/auth.log | grep PWD | awk '{print $6, $14}' |sort |uniq -c

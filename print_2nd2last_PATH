@@ -1,0 +1,1 @@
+echo $PATH | rev | cut -f 2 -d ":"  | rev

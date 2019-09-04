@@ -1,0 +1,4 @@
+
+#!/bin/bash
+# site moved to https://weather.gc.ca/rss/city/on-118_e.xml  
+curl -s https://weather.gc.ca/rss/city/on-118_e.xml  >> Temperature_raw ; grep Temperature Temperature_raw | cut -d " " -f2 |sed 's/&deg;/ /'
